@@ -5,7 +5,7 @@ class Window(QtGui.QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
         self.setGeometry(50,50,500,300)
-        self.setWindowTitle("PyQt Tutorial")
+        self.setWindowTitle("Creating Push Buttons")
         self.setWindowIcon(QtGui.QIcon('pondilogo.jpg'))
         self.home()
 

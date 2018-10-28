@@ -18,6 +18,8 @@ class Window(QtGui.QMainWindow):
         mainMenu =self.menuBar()
         fileMenu =mainMenu.addMenu('&File')
         fileMenu.addAction(extractAction)
+        fileMenu =mainMenu.addMenu('&Faith')
+        fileMenu.addAction(extractAction)
 
 
         self.home()

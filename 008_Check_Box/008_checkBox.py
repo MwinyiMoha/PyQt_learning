@@ -21,12 +21,6 @@ class Window(QtGui.QMainWindow):
         fileMenu =mainMenu.addMenu('&Faith')
         fileMenu.addAction(extractAction)
 
-        #Checkbox
-        checkBox = QtGui.QCheckBox("Enlarge Window", self)
-        checkBox.move(100,25)
-        #checkBox.toggle() is used when you want to automatically check the box
-        checkBox.stateChanged.connect(self.enlarge_window)
-
 
         self.home()
 
@@ -41,6 +35,14 @@ class Window(QtGui.QMainWindow):
 
         self.toolBar =self.addToolBar("Extraction")
         self.toolBar.addAction(extractAction)
+
+        
+        #Checkbox
+        checkBox = QtGui.QCheckBox("Enlarge Window", self)
+        checkBox.move(100,25)
+        #checkBox.toggle() is used when you want to automatically check the box
+        checkBox.stateChanged.connect(self.enlarge_window)
+
 
         self.show()
 
